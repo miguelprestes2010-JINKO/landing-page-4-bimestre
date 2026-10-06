@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PixelLab</title>
+
+
+    <!-- 2 GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+
+        /*
+        ==========================================
+        PALETA DE 5 CORES
+        ==========================================
+
+        Roxo escuro  #24133F
+        Azul         #4169A1
+        Azul claro   #8DD9E8
+        Amarelo      #F2C94C
+        Creme        #F5F1E8
+        */
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body {
+            margin: 0;
+
+            font-family: 'Nunito', sans-serif;
+
+            background-color: #F5F1E8;
+
+            color: #24133F;
+        }
+
+
+        /* ==========================================
+           PRIMEIRA PARTE
+           ALINHAMENTO CENTRAL
+           ========================================== */
+
+        .inicio {
+
+            min-height: 400px;
+
+            background-color: #24133F;
+
+            color: white;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+            text-align: center;
+
+            padding: 40px;
+        }
+
+
+        .inicio h1 {
+
+            font-family: 'Bebas Neue', sans-serif;
+
+            font-size: 70px;
+
+            letter-spacing: 3px;
+
+            margin: 0;
+
+            color: #8DD9E8;
+        }
+
+
+        .inicio p {
+
+            font-size: 20px;
+
+            margin: 10px 0 25px;
+        }
+
+
+        /* ==========================================
+           BOTÃO
+           ========================================== */
+
+        .botao {
+
+            background-color: #F2C94C;
+
+            color: #24133F;
+
+            padding: 12px 25px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            border-radius: 5px;
+
+            transition: 0.3s;
+        }
+
+
+        /* HOVER EFFECT */
+
+        .botao:hover {
+
+            background-color: #8DD9E8;
+
+            transform: scale(1.08);
+        }
+
+
+        /* ==========================================
+           SERVIÇOS
+           ALINHAMENTO À ESQUERDA
+           ========================================== */
+
+        .servicos {
+
+            padding: 50px 8%;
+
+            text-align: left;
+        }
+
+
+        .servicos h2 {
+
+            font-family: 'Bebas Neue', sans-serif;
+
+            font-size: 40px;
+
+            color: #4169A1;
+        }
+
+
+        .lista {
+
+            display: flex;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+        }
+
+
+        .item {
+
+            background-color: white;
+
+            padding: 20px;
+
+            width: 200px;
+
+            border-left: 5px solid #4169A1;
+        }
+
+
+        .item h3 {
+
+            margin-top: 0;
+
+            color: #24133F;
+        }
+
+
+        /* ==========================================
+           NOSSA IDEIA
+           ALINHAMENTO À DIREITA
+           ========================================== */
+
+        .ideia {
+
+            background-color: #8DD9E8;
+
+            padding: 50px 8%;
+
+            text-align: right;
+        }
+
+
+        .ideia h2 {
+
+            font-family: 'Bebas Neue', sans-serif;
+
+            font-size: 40px;
+
+            color: #24133F;
+        }
+
+
+        .ideia p {
+
+            max-width: 600px;
+
+            margin-left: auto;
+
+            line-height: 1.6;
+        }
+
+
+        /* ==========================================
+           FOOTER
+           ALINHADO À DIREITA
+           ========================================== */
+
+        footer {
+
+            background-color: #24133F;
+
+            color: white;
+
+            padding: 25px 8%;
+
+            text-align: right;
+        }
+
+
+        footer h3 {
+
+            color: #F2C94C;
+
+            font-family: 'Bebas Neue', sans-serif;
+
+            font-size: 25px;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ==========================================
+         ÁREA PRINCIPAL
+         ========================================== -->
+
+    <section class="inicio">
+
+        <h1>PIXELLAB</h1>
+
+        <p>
+            Crie. Teste. Imagine.
+        </p>
+
+        <a href="#" class="botao">
+            Começar
+        </a>
+
+    </section>
+
+
+    <!-- ==========================================
+         SERVIÇOS
+         ALINHAMENTO LEFT
+         ========================================== -->
+
+    <section class="servicos">
+
+        <h2>
+            O que podemos fazer?
+        </h2>
+
+
+        <div class="lista">
+
+            <div class="item">
+
+                <h3>Design</h3>
+
+                <p>
+                    Criamos ideias visuais simples
+                    e criativas.
+                </p>
+
+            </div>
+
+
+            <div class="item">
+
+                <h3>Sites</h3>
+
+                <p>
+                    Desenvolvemos páginas para
+                    projetos digitais.
+                </p>
+
+            </div>
+
+
+            <div class="item">
+
+                <h3>Ideias</h3>
+
+                <p>
+                    Transformamos ideias em
+                    pequenos projetos.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         NOSSA IDEIA
+         ALINHAMENTO RIGHT
+         ========================================== -->
+
+    <section class="ideia">
+
+        <h2>
+            Nossa ideia
+        </h2>
+
+
+        <p>
+            A PixelLab acredita que a tecnologia
+            pode ser usada para criar projetos
+            simples, criativos e fáceis de entender.
+            Nosso objetivo é transformar ideias
+            em experiências digitais.
+        </p>
+
+
+        <a href="#" class="botao">
+            Saiba mais
+        </a>
+
+    </section>
+
+
+    <!-- ==========================================
+         FOOTER
+         ALINHADO À DIREITA
+         ========================================== -->
+
+    <footer>
+
+        <h3>PixelLab</h3>
+
+        <p>
+            Instagram: @pixellab
+        </p>
+
+        <p>
+            Email: contato@pixellab.com
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
